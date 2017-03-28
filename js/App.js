@@ -100,7 +100,7 @@ var Add = React.createClass({
   },
   handlerClick: function(event){
     event.preventDefault();
-    var textEl = this.refs.text.value;
+    var textEl = this.refs.text;
     var author = this.refs.author.value;
     var text = this.refs.text.value;
 
