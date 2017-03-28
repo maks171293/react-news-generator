@@ -1,0 +1,109 @@
+.none {
+  display: none !important;
+}
+body{
+  background-color: rgba(0,0,0,.86);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3{
+  font-family: sans-serif;
+  font-weight: 200;
+}
+.app{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.news{
+}
+.article{
+  background-color: rgba(0,0,0,.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  transition: .2s;
+  font-family: sans-serif;
+  display: flex;
+  position: relative;
+}
+.article:hover{
+  box-shadow: 0 0 15px rgba(0,0,0,.5);
+}
+.article .item-author{
+  font-size: 12px;
+  flex: 1;
+}
+.article .item-text{
+  font-size: 14px;
+  flex: 3;
+  text-align: left;
+  padding: 0 10px 10px 10px;
+  position: relative;
+}
+.news-more{
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.form-wrapper{
+/*   background: rgba(10,110,130,1); */
+
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 1000px;
+  height: 250px;
+
+  z-index: 1;
+  color: rgba(10,110,130,1);
+}
+form.add{
+  display: flex;
+  flex-direction: column;
+}
+.add-author, .add-text, .add-checkrule, .add-btn {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 -10px rgba(0,0,0,.3);
+  transition: .3s;
+  color: rgba(30,150,160,1);
+}
+.add-text{
+  resize: none;
+  width: 400px;
+}
+.add-author, .add-text{
+  border-bottom: 1px solid transparent;
+}
+.add-author:focus, .add-text:focus{
+  border-bottom: 1px solid rgba(10,110,130,1);
+}
+.add-checkrule{
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.add-btn{
+  background-color: rgba(30,150,160,1);
+  color: rgba(37,37,37,1);
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 14px;
+  width: 200px;
+  flex: 1;
+  margin: auto;
+}
+.add-btn:hover{
+  box-shadow: 0 0 10px rgba(30,150,160,1);
+}
